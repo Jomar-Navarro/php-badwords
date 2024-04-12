@@ -2,8 +2,8 @@
 
 $testo = $_POST['testo'];
 $badwords = $_POST['badwords'];
-strlen($testo);
 
+$replace = str_replace($badwords, ' *** ', $testo);
 ?>
 
 <!DOCTYPE html>
@@ -19,7 +19,11 @@ strlen($testo);
 <body>
   <div class="container my-5">
     <h1>Paragrafo</h1>
-    <p class="testo"><?php echo $testo; ?></p>
+    <p><?php echo $testo; ?></p>
+    <p><strong>Sono presenti <?php echo strlen($testo); ?> caratteri.</strong></p>
+
+    <p><?php echo $replace; ?></p>
+    <p><strong>Sono presenti: <?php echo strlen($replace); ?> caratteri.</strong></p>
   </div>
 </body>
 
