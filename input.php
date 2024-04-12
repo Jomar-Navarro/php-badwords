@@ -4,6 +4,7 @@ $testo = $_POST['testo'];
 $badwords = $_POST['badwords'];
 
 $replace = str_replace($badwords, ' *** ', $testo);
+
 ?>
 
 <!DOCTYPE html>
