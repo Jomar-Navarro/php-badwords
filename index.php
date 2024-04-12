@@ -18,16 +18,18 @@
   <div class="container my-5">
     <h1>Badwords</h1>
 
-    <div>
-      <label for="testo"></label>
-      <textarea name="testo" class="form-control border-black" id="area" cols="10" rows="10"></textarea>
-    </div>
+    <form action="input.php" method="POST">
+      <div>
+        <label class="form-label" for="testo"></label>
+        <textarea name="testo" class="form-control border-black" id="area" cols="10" rows="10"></textarea>
+      </div>
 
-    <div>
-      <label for="badwords"></label>
-      <input type="text" name="badwords" class="form-control border-black">
-      <button class="btn btn-primary mt-3 ">Submit</button>
-    </div>
+      <div>
+        <label for="badwords"></label>
+        <input type="text" name="badwords" class="form-control border-black">
+        <button class="btn btn-primary mt-3 ">Submit</button>
+      </div>
+    </form>
   </div>
 </body>
 
