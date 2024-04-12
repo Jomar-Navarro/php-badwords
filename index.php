@@ -14,20 +14,25 @@
   <title>php-badwords</title>
 </head>
 
-<body>
+<body class="bg-secondary">
   <div class="container my-5">
-    <h1>Badwords</h1>
+    <h1 class="text-center">Badwords</h1>
 
     <form action="input.php" method="POST">
       <div>
         <label class="form-label" for="testo"></label>
-        <textarea name="testo" class="form-control border-black" id="area" cols="10" rows="10"></textarea>
+        <textarea name="testo" class="form-control border-black" id="area" cols="10" rows="10" placeholder="Scrivi un paragrafo..."></textarea>
       </div>
 
-      <div>
-        <label for="badwords"></label>
-        <input type="text" name="badwords" class="form-control border-black">
-        <button class="btn btn-primary mt-3 ">Submit</button>
+      <div class="wrapper d-flex flex-column align-items-center">
+        <div>
+          <label for="badwords"></label>
+          <input type="text" name="badwords" class="form-control border-black" placeholder="Censura una parola...">
+        </div>
+
+        <div>
+          <button class="btn btn-primary mt-3 justify-content-center">Submit</button>
+        </div>
       </div>
     </form>
   </div>
